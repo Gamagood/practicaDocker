@@ -1,0 +1,14 @@
+services:
+  angular-web:
+    image: actividad9-equipo6:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Reemplaza el valor por la URL pública HTTPS de tu repositorio.
+        REPO_URL: https://github.com/Gamagood/equipocurso6
+        # Rama remota que contiene my-app (debe publicarse antes de construir).
+        REPO_BRANCH: migracion-angular
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,9 @@
+.git
+.gitignore
+node_modules
+**/node_modules
+dist
+**/dist
+*.tar
+*.tar.gz
+README.md
